@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Questionnaire nutritionnel </title>
+
+</head>
+
+<body>
+  <header>
+       <p> Ce formulaire  permet de cerner votre alimentation</p>
+      <p> un bilan est effectuer afin de savoir si vous avez trop ou pas assez d'apports</p> 
+      <p> A la suite de ce formulaire, vous aurez votre bilan et les recettes adaptés a votre alimentation<br>  </p>
+  </header>
+    
+<section>
+    <form method="post" action="traitement.php">
+        <br>
+       <p> <label for="age">Votre Age : </label> <input type="text" id="age" name="age" /> ans </p><br>
+      <p> <label for="poids"> Votre poids : </label><input type="text" id="poids" name="poids" /> kg</p> <br>
+      <p><label for="taille"> Votre taille : </label><input type="text" id="taille" name="taille" /> m</p> <br>      
+     
+       <h1>Legumes :</h1>
+            <p>Quelle quantité journaliére consommez-vous ? 
+            A Titre indicatif : 1 cuillere à soupe = 30g, 1 courgette = 200g, 1 carottre = 100g :
+            <br>
+          <p> <input type="radio" name="legumes" value="0a150gLeg" id="0a150gLeg" /> <label for="0a150gLeg">De 0 à 150g : j'aime pas trop ça    "</label>    <p>
+          <p> <input type="radio" name="legumes" value="150ga350gLeg" id="150ga350gLeg" /> <label for="150ga350gLeg">150g à 350g  "</label>       </p>           
+          <p> <input type="radio" name="legumes" value="350ga400Leg" id="350ga400gLeg" /> <label for="350ga400gLeg">350g à 400g  </label>      </p>          
+          <p> <input type="radio" name="legumes" value="plusde400gLeg" id="plusde400gLeg" /> <label for="plusde400gLeg">Beaucoup plus de légumes!</label>  
+       </p><br>
+      
+           <h1> Fruits : </h1>
+           <p>Quelle quantité journaliére consommez-vous ? A titre indicatif : 1 pomme = 150g, fruits cuits ou crus, en compote ou entiers!</p>
+          <br>
+           <input type="radio" name="fruits" value="0a150gFrui" id="0a150gFrui" /> <label for="0a150gFrui">De 0 à 150g j'aime pas trop ça"</label><p>           </p>
+           <input type="radio" name="fruits" value="150ga350gFrui" id="150ga350gFrui" /> <label for="150ga350gFrui">150g à 350g</label><p>           </p>
+           <input type="radio" name="fruits" value="350ga400gFrui" id="350ga400gFrui" /> <label for="350ga400gFrui">350g à 400g</label><p>           </p>
+           <input type="radio" name="fruits" value="plusde400gFrui" id="plusde400gFrui" /> <label for="plusde400gFrui">Beaucoup plus de légumes! :-)</label>
+       </p><br>
+          <p> Vous mettez un point d'honneur à consommer des fruits ou legumes de saison ? <p>
+        <input type="radio" name="saison" value="oui" id="oui" /> <label for="oui">oui  </label>
+        <input type="radio" name="saison" value="non" id="non" /> <label for="non">non  </label>
+        <br>
+       <h1> Bio</h1>
+          <label for="bio">Consommez-vous des produits biologique ?</label>
+               <select name="bio" id="bio" placeholder="Choississez une frequence"> 
+                <option value="choississez">Choississez une frequence</option>
+                <option value ="jamais">Jamais ou rarement</option>
+                <option value="deuxfois"> Deux fois par semaine</option>
+                <option value="quatrefois">4 fois par semaine</option>
+                <option value="ttlesjour">Tous les jours</option>
+              
+                </select>
+            <br><br>
+        
+           <h1>Viandes - Oeufs - Poisson :</h1>
+           <p>A titre indicatif : 1 oeuf = 50g, un steack haché/pavé de saumon : 120g</p>
+           <p>
+           <input type="radio" name="viandes" value="pasdeviande" id="pasdeviande" /> <label for="pasdeviande">Pas de viande!  </label>
+           <input type="radio" name="viandes" value="50ga150gviande" id="50ga150gviande" /> <label for="50ga150gviande">De 50g à 100g  </label>
+           <input type="radio" name="viandes" value="150ga300gviande" id="150ga300gviande" /> <label for="150ga300gviande">De 150g a 300g  </label>
+           <input type="radio" name="viandes" value="plusde300gviande" id="plusde300gviande" /> <label for="plusde300gviande">Plus de 300g : Je suis carnivore! </label>
+        </p>
+          <br>
+           <p>
+          <h1> Feculents : </h1>
+            <p> Riz - Pates - Légumes secs - Pomme de terre : <br />
+           <p>A titre indicatif : 1 pomme de terre moyenne = 100g, 1 cuillére à soupe = 30g  </p>         
+           <input type="radio" name="feculent" value="0a100gFecu" id="0a100gFecu" /> <label for="0a100gFecu">Peu de féculent moins de 100g par jour  </label>
+           <input type="radio" name="feculent" value="100ga250gFecu" id="150ga250gFecu" /> <label for="150ga250gFecu">100g à 250g  </label>
+           <input type="radio" name="feculent" value="250ga400gFecu" id="250ga400gFecu" /> <label for="250ga400gFecu">250g à 400g  </label>
+           <input type="radio" name="feculent" value="400ga500gFecu" id="400ga500gFecu" /> <label for="400ga500gFecu">400 à 500g  </label>
+           <input type="radio" name="feculent" value="plusde500gFecu" id="plusde500gFecu" /> <label for="plusde500gFecu">Plus de 500g</label><br><br>
+       </p>
+
+
+            <h1>Pain:</h1> 
+           
+           A titre indicatif : 1 baguette = 250g, 1 tartine = 30g
+     <p></p>
+     
+        <p><label for="pain">Quantité de pain :  </label> <input type="number" id="pain" name="pain" /> gramme</p> <br>
+
+         <p> Consommer des légumes secs (poids chiche, lentilles, haricot...) ? <p>
+        <input type="radio" name="saison" value="oui" id="oui" /> <label for="oui">Oui  </label>
+        <input type="radio" name="saison" value="non" id="non" /> <label for="non">Non</label><br />
+        <br>
+       <br>
+        <h1>Produits laitier</h1>
+        <p>Combien de produit laitier consommez-vous par jour :</p>
+        <input type="radio" name="lait" value="aucun" id="aucun" /> <label for="aucun">aucun</label><br />
+        <input type="radio" name="lait" value="1fois" id="1fois" /> <label for="1fois">1 fois</label><br />
+        <input type="radio" name="lait" value="2fois" id="2fois" /> <label for="2fois">2 fois</label><br />
+        <input type="radio" name="lait" value="plusde2fois" id="plusde2fois" /> <label for="plusde2fois">plus de 2 fois</label><br />
+
+        <h1>Matière grasse :</h1>
+        <p> Consommez vous des huiles de types Colza, noix, olive, pépin de raisin ou bien des poissons gras (saumon,sardines, maqueraux) :</p>
+        <input type="radio" name="omega3" value="oui3" id="oui3" /> <label for="oui3">Oui  </label>
+        <input type="radio" name="omega" value="non3" id="non3" /> <label for="non3">Non</label><br />
+
+       
+        <p>Ajoutez-vous souvent des matières grasse (beurre, crème, huile) dans votre alimentation (cuisine):</p>
+        <input type="radio" name="mg" value="Achaquerepas" id="Achaquerepas" /> <label for="Achaquerepas">A chaque repas</label><br />
+        <input type="radio" name="mg" value="2fois" id="2fois" /> <label for="2fois">2 fois par jour</label><br />
+        <input type="radio" name="mg" value="1foisparjour" id="1foisparjour" /> <label for="1foisparjour">1 fois par jour</label><br />
+        <input type="radio" name="mg" value="rarement" id="rarement" /> <label for="rarement">Jamais ou Rarement</label><br />
+
+        <p>Vous arrive t-il de consommez des chips,gateau apéritif, friture ? A quelle fréquence : <p> 
+        <input type="radio" name="mg" value="ttlesjour" id="ttlesjour" /> <label for="ttlesjour">Tous les jours</label><br />
+        <input type="radio" name="mg" value="3fois" id="3fois" /> <label for=3fois">3fois par semaine</label><br />
+        <input type="radio" name="mg" value="2fois" id="2fois" /> <label for="2fois">2fois par semaine</label><br />
+        <input type="radio" name="mg" value="jamais" id="jamais" /> <label for="jamais">Jamais ou Rarement</label><br />
+
+        <h1>PRODUITS SUCRES ET SUCRE : </h1>
+        <p>Manger vous des prouits sucrés :  barre chocolatés, bonbons, confiture, sodas, jus,morceaux de sucres dans le café ou le thé :-) :
+        <p>A titre indicatif : un mars = 50g, une petit poignée de bonbon = 40g , 1 morceaux de sucre : 5g, soda une canette= 35g :</p>
+        <input type="radio" name="sucre" value="jamaissucre" id="jamaissucre" /> <label for="jamaissucre">Très peu voir Jamais!</label><br />
+        <input type="radio" name="sucre" value="" id="100g" /> <label for=3fois">50g à 100g</label><br />
+        <input type="radio" name="sucre" value="2fois" id="150g" /> <label for="2fois">100g à 150g </label><br/>
+        <input type="radio" name="sucre" value="jamais" id="plusde150g" /> <label for="jamais">plus de 150g</label>
+
+       <h1> Alcool</h1>
+       <p>A quelle fréquence consommez vous de l'alcool</p>
+            <label for="alcool"></label>
+              <select name="alcool" id="alcool"> 
+                <option value="jamais">Jamais ou rarement</option>
+                <option value ="2foisparsemaine"> 2 fois par semaine</option>
+                <option value="4foisparsemaine">4 fois par semaine</option>
+                <option value="ttlesjour">Tous les jours</option>
+                <option value="plusieurfois">Plusieurs fois par jour</option>
+                
+              </select>
+            </p>
+    
+
+        <h1>Boisson </h1>
+          <p> Quelle quantité de boisson prenez-vous par jour : café, thé, eau...</p>
+          <p> Une mug a café = 200ml<p>
+        <input type="radio" name="boisson" value="500ml" id="500ml" /> <label for="500ml">500ml</label><br>
+        <input type="radio" name="boisson" value="1 litre" id="1litre" /> <label for=1litre">1 litre</label><br />
+        <input type="radio" name="boisson" value="1.5litre" id="1.5litre" /> <label for="1.5litre">1,5 litre </label><br/>
+        <input type="radio" name="boisson" value="plus1.5" id="plus1.5" /> <label for="plus1.5">plus de 1,5 litres</label><br />
+
+
+             <h1>Cuisine</h1>
+          <p> Vous utilisez plutôt des plats tout fait, industriels plutôt que cuisinez vous même soit par manque de temps ou d'envie </p>
+          <p> Une mug a café = 200ml<p>
+        <input type="radio" name="cuisine" value="oui" id="oui" /> <label for="oui">Oui  </label>
+        <input type="radio" name="cuiine" value="non" id="non" /> <label for=non">Non</label><br>
+
+         <p>Mangez - vous au Fast food (pizza, kebab, macdo....) : <p> 
+        <input type="radio" name="fastfood" value="plusieurx/semaines" id="plusieurx/semaines" /> <label for="plusieurx/semaines">Plusieurs par semaines</label><br />
+        <input type="radio" name="fastfood" value="1x/semaine" id="1x/semaine" /> <label for=1x/semaine">1 fois par semaine</label><br />
+        <input type="radio" name="fastfood" value="2x/semaine" id="2x/semaine" /> <label for="2x/semaine">1 fois toutes les deux semaines</label><br />
+        <input type="radio" name="fastfood" value="jamais" id="jamais" /> <label for="jamais">Jamais ou Rarement</label><br><br>
+
+             
+            <label for="profil"></label>
+      				<select name="profil" id="profil" placeholder="Choississez votre profil"> 
+      					<option value="choississez">Choississez votre profil</option>
+      					<option value ="Végétarien">Végétarien</option>
+      					<option value="busy">Busy</option>
+      					<option value="Carnivor">Carnivor</option>
+      					<option value="gourmand">Grod mangeur</option>
+      					<option value="particulier"></option>
+              </select>
+            <p></p>
+    			<br>
+              <input type="submit" id=Valider" name="Valider" value="Valider le questionnaire" />
+             
+    </form>
+    </section>
+ 
+
+</body>
+
+</html>

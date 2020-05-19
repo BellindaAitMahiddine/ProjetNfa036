@@ -5,9 +5,21 @@
 <meta http-equiv="Content-Type" />
 <meta charset="UTF-8">
     <title>Questionnaire nutritionnel </title>
-
+    <link rel="stylesheet" href="style-css.css">
 </head>
+<body>
+  <div id = "banner1">
+    <img src="images/image-head.jpg">
+  </div>
+  <div id = "menu">
+    <ul>
+      <li><a href="page_acceuil.html"> ACCEUIL </a> </li>
+      <li><a href="bien_manger.html"> BIEN MANGER </a> </li>
+      <li><a href="cuisine_recettes.html"> CUISINE ET RECETTES </a> </li>
+      <li><a href="index.html"> BIEN-ÊTRE </a> </li>
+    </ul>
 
+  </div>
 <body>
   <header>
        
@@ -40,6 +52,8 @@
 
 
   %>
+   <div id = "formulaire">
+ 
   <section>
 
     <h1>DERNIERE ETAPE  DU QUESTIONNAIRE</h1>
@@ -72,16 +86,16 @@
 
       %>
 
-         <h2>Produits sucr&eacutes et sucre : </h2>
+         <h1>Produits sucr&eacutes et sucre : </h1>
          <p>Manger vous des prouits sucr&eacutes :  barre chocolat&eacutes, bonbons, confiture, sodas, jus, morceaux de sucre dans le caf&eacute ou le th&eacute :-) :
          <p>A titre indicatif : un mars(45g) contient 30g, une petite poign&eacutee de bonbon = 40g , 1 morceaux de sucre : 5g, soda: une canette (33cl)= 35g :</p>
-         <input type="number" id="sucre" name="sucre" /><label for="sucre"> gramme </label>  
+         <p><input type="number" id="sucre" name="sucre"required="required" /><label for="sucre"> gramme </label>  <p>
          <br>
 
-         <h2> Alcool</h2>
-         <p>A quelle fr&eacutequence consommez vous de l'alcool</p>
+         <h1> Alcool</h1>
+         <p>A quelle fr&eacutequence consommez-vous de l'alcool ? 
               <label for="alcool"></label>
-                <select name="alcool" id="alcool"> 
+                <select name="alcool" id="alcool"required="required"> 
 
                   <option value= "0"> Jamais ou rarement</option>
                   <option value= "1"> 2 fois par semaine</option>
@@ -90,33 +104,36 @@
                   <option value=" 4"> Plusieurs fois par jour</option>
                   
                 </select>
-          </p>
+          </p> 
       
           <br>
 
-          <h2>Boisson </h2>
-          <p> Quelle quantit&eacute de boisson prenez-vous par jour : caf&eacute, th&eacute, eau...</p>
-          <p> Une mug a caf&eacute = 200ml<p>
-          <input type="number" id="eau" name="eau" /><label for="sucre"> ml</label> 
+          <h1>Boisson </h1>
+          <p> Quelle quantit&eacute de boisson prenez-vous par jour : caf&eacute, th&eacute, eau...(Un mug a caf&eacute = 200ml)<p>
+          <p><input type="number" id="eau" name="eau" required="required"/><label for="sucre"> ml</label> </p>
 
           <br>
 
-          <h2>Cuisine</h2>
+          <h1>Cuisine</h1>
           <p> Vous consommez fr&eacutequemment des plats tout fait, industriels plut&ocirct que cuisinez vous m&ecircme soit par manque de temps ou d'envie </p>
        
-          <input type="radio" name="cuisine" value="2" id="2" /> <label for="2">Oui  </label>
-          <input type="radio" name="cuisine" value="1" id="1" /> <label for="1">Non</label><br>
+         <p> <input type="radio" name="cuisine" value="2" id="2"required="required" /> <label for="2">Oui  </label>
+          <input type="radio" name="cuisine" value="1" id="1"required="required" /> <label for="1">Non</label><br></p>
 
           <p>Mangez - vous au Fast food (pizza, kebab, macdo....) : <p> 
-          <input type="radio" name="fastfood" value="3" id="3" /> <label for="3">Plusieurs par semaines</label><br />
-          <input type="radio" name="fastfood" value="2" id="2" /> <label for="2">1 fois par semaine</label><br />
-          <input type="radio" name="fastfood" value="1" id="1" /> <label for="1">1 fois toutes les deux semaines</label><br />
-          <input type="radio" name="fastfood" value="0" id="0" /> <label for="0">Jamais ou Rarement</label><br><br>
+          <p><input type="radio" name="fastfood" value="3" id="3" required="required" /> <label for="3">Plusieurs par semaines</label><br />
+          <input type="radio" name="fastfood" value="2" id="2"required="required" /> <label for="2">1 fois par semaine</label><br />
+          <input type="radio" name="fastfood" value="1" id="1"required="required" /> <label for="1">1 fois toutes les deux semaines</label><br />
+          <input type="radio" name="fastfood" value="0" id="0" required="required"/> <label for="0">Jamais ou Rarement</label><br><br></p>
 
+
+          <p>Agr&eacutementez-vous fr&eacutequemment vos repas d'&eacutepices (curcuma, gingembre, cumin...) ?</p>
+         <p> <input type="radio" name="epices" value="0" id="0" required="required"/> <label for="0"> Oui </label>
+          <input type="radio" name="epices" value="1" id="1" required="required"/> <label for="1"> Non </label></p>
+          <br><br>
           <br>
-      		<br>
-
-          <input type="submit" id=Valider" name="Valider" value="Valider le questionnaire" />
+          <br>
+          <p><input type="submit" id=valider" name="valider" value="valider le questionnaire" /></p>
 
         </form>
       </section>

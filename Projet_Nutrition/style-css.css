@@ -82,7 +82,13 @@
 
 #formulaire  h1 {
 	color: #228B22;
+
+	text-align: center;
 }
+p {
+	text-align: center;
+}
+
 
 
 /* partie page bien manger */

@@ -39,7 +39,7 @@
   <div id = "formulaire">
   
   <h1> Etape 2 du questionnaire:</h1>
-  <table height = '2000' border='0'>
+<table height = "2000" border="0">
   <form method="post" action="formulairenutrition_Etape3.jsp">
 <%
         //QUESTIONNAIRE EN PLUSIEURS ETAPES : MOINS DECOURAGEANT POUR l'UTILISATEUR
@@ -120,8 +120,8 @@
           <input type="radio" name="friture" value= "2" id="2" required="required"/> <label for="2">3fois par semaine   </label><br>
           <input type="radio" name="friture" value= "1" id="1" required="required"/> <label for="1">2fois par semaine   </label><br>
           <input type="radio" name="friture" value= "0" id="0" required="required"/> <label for="0">Jamais ou Rarement</label><br /></p></td></tr>
-           
-          <tr><th></th><td><br><br><br><input type="submit" id=valider" name="valider" value="Passez &agrave la derniere etape" /></td></tr>
+           <tr><th><br><br><br></th></tr>
+          <tr><th>  <input type="button" value="Retour &agrave l'etape 1" onclick="history.go(-1)"></th><td><input type="submit" id=valider" name="valider" value="Passer &agrave l'etape suivante" /></td></tr>
         </form>
     </table>
   </body>

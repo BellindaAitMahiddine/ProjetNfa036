@@ -124,8 +124,8 @@
           <tr><th>Agr&eacutementez-vous fr&eacutequemment vos repas d'&eacutepices (curcuma, gingembre, cumin...) ?</th>
            <td><p><input type="radio" name="epices" value="0" id="0" required="required"/> <label for="0"> Oui </label>
           <input type="radio" name="epices" value="1" id="1" required="required"/> <label for="1"> Non </label></p></td></tr>
-       
-          <tr><th></th><td> <br><br><br><input type="submit" id=valider" name="valider" value="valider le questionnaire" /></td></tr>
+             <tr><th><br><br><br></th></tr>
+          <tr><td> <input type="button" value="Retour &agrave l'etape 2" onclick="history.go(-1)"></th><td> <input type="submit" id=valider" name="valider" value="Valider le questionnaire" /></td></tr>
         </form>
         </table>
   </body>

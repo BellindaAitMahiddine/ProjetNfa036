@@ -86,13 +86,28 @@
 
 	text-align: center;
 }
+#formu{
+	padding-top: 50px;
+	padding-left: 100px;
+}
+#formu p {
+	font-size: 25px;
+	width: 100%;
+	color : #555B61;
+	text-align: center;
+	padding-right:  60px;
+
+}
+label {
+	padding: 60px;
+}
 
 table{
 	
 	padding-left: 100px;
 	width: 95%;
+	height: 1000;
 	border-collapse: collapse; 
-	border: none;
 	
 	
 }

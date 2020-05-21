@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" />
 <meta charset="UTF-8">
-    <title>Questionnaire nutritionnel </title>
+    <title>Questionnaire nutritionnel : etape 3 </title>
     <link rel="stylesheet" href="style-css.css">
 </head>
 <body>
@@ -53,12 +53,10 @@
 
   %>
    <div id = "formulaire">
- 
-  <section>
-
-    <h1>DERNIERE ETAPE  DU QUESTIONNAIRE</h1>
-  
+    <h1>Derniere etape du questionnaire</h1>
+  <table height = '1500' border='0'>
     <form method="post" action="????">
+
 
         <%
         //LES DONNEES DES ETAPES PRECEDENTES SONT INTEGREES DANS FORMULAIRE EN CACHE  : input type hidden
@@ -86,16 +84,16 @@
 
       %>
 
-         <h1>Produits sucr&eacutes et sucre : </h1>
-         <p>Manger vous des prouits sucr&eacutes :  barre chocolat&eacutes, bonbons, confiture, sodas, jus, morceaux de sucre dans le caf&eacute ou le th&eacute :-) :
-         <p>A titre indicatif : un mars(45g) contient 30g, une petite poign&eacutee de bonbon = 40g , 1 morceaux de sucre : 5g, soda: une canette (33cl)= 35g :</p>
-         <p><input type="number" id="sucre" name="sucre"required="required" /><label for="sucre"> gramme </label>  <p>
-         <br>
+         <tr><th colspan="2"><h1>Produits sucr&eacutes et sucre : </h1></th></tr>
+         <tr><th>Manger vous des prouits sucr&eacutes :  barre chocolat&eacutes, bonbons, confiture, sodas, jus, morceaux de sucre dans le caf&eacute ou le th&eacute :
+       <br></th>
+         <td><br><br><br><br><br><p><input type="number" id="sucre" name="sucre"required="required" /><label for="sucre"> g</label> </p>
+          <p> A titre indicatif :<br>un mars(45g) contient 30g, une petite poign&eacutee de bonbon = 40g , 1 morceaux de sucre : 5g, soda: une canette (33cl)= 35g :</p></td></tr>
 
-         <h1> Alcool</h1>
-         <p>A quelle fr&eacutequence consommez-vous de l'alcool ? 
+         <tr><th colspan="2"><h1> Alcool</h1></th></tr>
+         <tr><th>A quelle fr&eacutequence consommez-vous de l'alcool ? </th>
               <label for="alcool"></label>
-                <select name="alcool" id="alcool"required="required"> 
+                <td><p><select name="alcool" id="alcool"required="required"> 
 
                   <option value= "0"> Jamais ou rarement</option>
                   <option value= "1"> 2 fois par semaine</option>
@@ -103,39 +101,32 @@
                   <option value= "3"> Tous les jours</option>
                   <option value=" 4"> Plusieurs fois par jour</option>
                   
-                </select>
-          </p> 
-      
-          <br>
+                </select></p></td></tr>
 
-          <h1>Boisson </h1>
-          <p> Quelle quantit&eacute de boisson prenez-vous par jour : caf&eacute, th&eacute, eau...(Un mug a caf&eacute = 200ml)<p>
-          <p><input type="number" id="eau" name="eau" required="required"/><label for="sucre"> ml</label> </p>
+          <tr><th colspan="2"><h1>Boisson </h1></th></tr>
+          <tr><th> Quelle quantit&eacute de boisson (caf&eacute, th&eacute, eau...) prenez-vous par jour? </th>
+          <td><p><input type="number" id="eau" name="eau" required="required"/><label for="sucre"> ml</label></p> <p>A titre indicatif: <br>(Un mug a caf&eacute = 200ml)</p></td></tr>
 
           <br>
 
-          <h1>Cuisine</h1>
-          <p> Vous consommez fr&eacutequemment des plats tout fait, industriels plut&ocirct que cuisinez vous m&ecircme soit par manque de temps ou d'envie </p>
+          <tr><th colspan="2"><h1>Cuisine</h1></th></tr>
+          <tr><th> Vous consommez fr&eacutequemment des plats tout fait, industriels plut&ocirct que cuisinez vous m&ecircme soit par manque de temps ou d'envie </th>
        
-         <p> <input type="radio" name="cuisine" value="2" id="2"required="required" /> <label for="2">Oui  </label>
-          <input type="radio" name="cuisine" value="1" id="1"required="required" /> <label for="1">Non</label><br></p>
+         <td><p><input type="radio" name="cuisine" value="2" id="2"required="required" /> <label for="2">Oui  </label>
+          <input type="radio" name="cuisine" value="1" id="1"required="required" /> <label for="1">Non</label><br></p></td></tr>
 
-          <p>Mangez - vous au Fast food (pizza, kebab, macdo....) : <p> 
-          <p><input type="radio" name="fastfood" value="3" id="3" required="required" /> <label for="3">Plusieurs par semaines</label><br />
-          <input type="radio" name="fastfood" value="2" id="2"required="required" /> <label for="2">1 fois par semaine</label><br />
-          <input type="radio" name="fastfood" value="1" id="1"required="required" /> <label for="1">1 fois toutes les deux semaines</label><br />
-          <input type="radio" name="fastfood" value="0" id="0" required="required"/> <label for="0">Jamais ou Rarement</label><br><br></p>
+          <tr><th>Mangez - vous au Fast food (pizza, kebab, macdo....) : </th>          
+          <td><p><br><input type="radio" name="fastfood" value="3" id="3" required="required" /> <label for="3">Plusieurs par semaines</label><br>
+          <input type="radio" name="fastfood" value="1" id="1"required="required" /> <label for="1">1 fois toutes les deux semaines</label><br>
+          <input type="radio" name="fastfood" value="0" id="0" required="required"/> <label for="0">Jamais ou Rarement</label><br><br></p></td></tr>
 
 
-          <p>Agr&eacutementez-vous fr&eacutequemment vos repas d'&eacutepices (curcuma, gingembre, cumin...) ?</p>
-         <p> <input type="radio" name="epices" value="0" id="0" required="required"/> <label for="0"> Oui </label>
-          <input type="radio" name="epices" value="1" id="1" required="required"/> <label for="1"> Non </label></p>
-          <br><br>
-          <br>
-          <br>
-          <p><input type="submit" id=valider" name="valider" value="valider le questionnaire" /></p>
-
+          <tr><th>Agr&eacutementez-vous fr&eacutequemment vos repas d'&eacutepices (curcuma, gingembre, cumin...) ?</th>
+           <td><p><input type="radio" name="epices" value="0" id="0" required="required"/> <label for="0"> Oui </label>
+          <input type="radio" name="epices" value="1" id="1" required="required"/> <label for="1"> Non </label></p></td></tr>
+       
+          <tr><th></th><td> <br><br><br><input type="submit" id=valider" name="valider" value="valider le questionnaire" /></td></tr>
         </form>
-      </section>
+        </table>
   </body>
 </html>

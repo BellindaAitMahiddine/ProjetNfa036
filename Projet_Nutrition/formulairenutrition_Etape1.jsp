@@ -17,19 +17,16 @@
       <li><a href="page_acceuil.html"> ACCEUIL </a> </li>
       <li><a href="bien_manger.html"> BIEN MANGER </a> </li>
       <li><a href="cuisine_recettes.html"> CUISINE ET RECETTES </a> </li>
-      <li><a href="index.html"> BIEN-ÊTRE </a> </li>
+      <li><a href="index.html"> BIEN-&EcircTRE </a> </li>
     </ul>
   </div>
-	<div id ="formulaire">
-			<h1> Etape 1 du questionnaire</h1>
-		</div>
 
 	<div id = "formu">
-
+			<h1> Etape 1 du questionnaire</h1>
 		  	<form method="post" action="formulairenutrition_Etape2.jsp">
 
 		  	
-	    <p> <label for="age"> Votre age : </label>  <input type="number" id="age" name="age" required="required"/> ans</p><br>
+	    <p> <label for="age"> Votre &acircge : </label>  <input type="number" id="age" name="age" required="required"/> ans</p><br>
 	  
 	    <p><label for="poids"> Votre poids : </label>   <input type="number" id="poids" name="poids" required="required"/> kg</p><br>
 
@@ -58,20 +55,21 @@
           <br>
           <br>
 
-	     <p><label for="profil">Vous &ecirctes plut&ocirct : </label></p><p>
-	       <input type="radio" name="profil" value="1" id="1"required="required"> <label for="1"> V&eacuteg&eacutetarien   </label>              
-	       <input type="radio" name="profil" value="2" id="2"required="required"> <label for="2"> Gourmand  </label>  
-	       <input type="radio" name="profil" value="3" id="3"required="required"> <label for="3"> Petit mangeur  </label>     
-	       <input type="radio" name="profil" value="4" id="4"required="required"> <label for="4"> Sportif  </label> 
-	       <input type="radio" name="profil" value="5" id="5"required="required"> <label for="5"> S&eacutedentaire  </label> </p>
+	     <p><label for="profil">Votre niveau d'activit&eacute physique : </label></p><p>
+	       <input type="radio" name="profil" value="1" id="1"required="required"> <label for="1"> S&eacutedentaire </label>              
+	       <input type="radio" name="profil" value="2" id="2"required="required"> <label for="2"> Activit&eacute normal </label>  
+	       <input type="radio" name="profil" value="3" id="3"required="required"> <label for="3"> Activit&eacute importante  </label>     
+	       <input type="radio" name="profil" value="4" id="4"required="required"> <label for="4"> Activit&eacute tres importante </label> 
+	      <p> S&eacutedentaire : moins de 30 min d'activit&eacute physique par jour - Activit&eacute normale : entre 30 min et 1h - Activit&eacute importante : entre 1h et 2h - Activit&eacute tres importante : superieur a 2h</p>
 	       <br>  
 	       <br>
 	       <br>
-	      <p>   <input type="button" value="Retour &agrave la page d'accueil" onclick="history.go(-1)"> <input type="submit" id=valider" name="valider" value="Passez &agrave l'&eacutetape suivante" /></p>
+	      <p>   <input type="button" value="Retour &agrave la page d'accueil" onclick="history.go(-1)"> <input type="submit" id=valider" name="valider" value="Passez &agrave l'etape suivante" /></p>
 	
 	      </form>
 	
 	</div>
-	 
+	 <div id = "footer">
+	</div>
 	</body>
 </html>

@@ -16,7 +16,7 @@
       <li><a href="page_acceuil.html"> ACCEUIL </a> </li>
       <li><a href="bien_manger.html"> BIEN MANGER </a> </li>
       <li><a href="cuisine_recettes.html"> CUISINE ET RECETTES </a> </li>
-      <li><a href="index.html"> BIEN-ÊTRE </a> </li>
+      <li><a href="index.html"> BIEN-&EcircTRE </a> </li>
     </ul>
 
   </div>
@@ -39,7 +39,7 @@
   <div id = "formulaire">
   
   <h1> Etape 2 du questionnaire:</h1>
-<table height = "2000" border="0">
+  <table height = "2000" border="0">
   <form method="post" action="formulairenutrition_Etape3.jsp">
 <%
         //QUESTIONNAIRE EN PLUSIEURS ETAPES : MOINS DECOURAGEANT POUR l'UTILISATEUR
@@ -122,7 +122,11 @@
           <input type="radio" name="friture" value= "0" id="0" required="required"/> <label for="0">Jamais ou Rarement</label><br /></p></td></tr>
            <tr><th><br><br><br></th></tr>
           <tr><th>  <input type="button" value="Retour &agrave l'etape 1" onclick="history.go(-1)"></th><td><input type="submit" id=valider" name="valider" value="Passer &agrave l'etape suivante" /></td></tr>
+           <tr><th><br><br><br></th></tr>
         </form>
-    </table>
+     </table>
+    </div>
+    <div id = "footer">
+    </div>
   </body>
 </html>

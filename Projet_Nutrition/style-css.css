@@ -29,7 +29,7 @@
 
 #menu ul {
 	float: left;
-	left: 40%;
+	left: 35%;
 	position: relative;
 	padding-top: -10px;
 	margin-left: -60px;
@@ -69,6 +69,8 @@
 	margin : auto; 
 }
 
+/** CSS FORMULAIRE **/
+
 #TitreBienvenue strong {
 	color: #FF8C00;
 }
@@ -82,13 +84,18 @@
 }
 
 #formulaire  h1 {
-	color: #74B72E;;
+	color: #74B72E;
 
 	text-align: center;
 }
-#formu{
+
+
+#formu h1{
+	color: #74B72E;
+	font-size: 40px;
+	width: 100%;
 	padding-top: 50px;
-	padding-left: 100px;
+	text-align: center;
 }
 #formu p {
 	font-size: 25px;
@@ -99,7 +106,7 @@
 
 }
 label {
-	padding: 60px;
+	padding: 20px;
 }
 
 table{
@@ -109,7 +116,6 @@ table{
 	height: 1000;
 	border-collapse: collapse; 
 	
-	
 }
 
 th {
@@ -118,8 +124,8 @@ th {
 }
 td {
 	align-content: center;
-	padding-left: 150px;
-	/*text-align: left;*/
+	padding-left: 50px;
+	text-align: left;
 	border: none;
 }
 p{
@@ -557,14 +563,127 @@ select:hover{
 	  left: 49.3%;
 }
 
+/********************/
+/* CODE CSS THIBAUT */ 
+/*******************/
 
+
+/*BANNIER_BIEN_ETRE*/
+#bienetre1 img{
+
+    display: block;	
+	height: 750px;
+	width :100%;
+    
+    
+
+}
+
+/*TITRE_ACCEUIL_BIEN_ETRE*/
+.TitreBienEtre{
+
+    text-align: center;
+	font-size: 40px;
+	display: block;
+	margin : auto; 
+	color: #FF8C00;
+
+
+
+}
+
+/*SOUS-TITRE_BIEN_ETRE*/ 
+.SousTitreBienEtre{
+
+    text-align: left;
+	font-size: 30px;
+	display: block;
+	margin : auto; 
+	color: #FF8C00;
+
+
+
+}
+
+/*Ecrirure_Acceuil_Page_Bien_Etre*/ 
+.EcritureAcceuilBE{
+
+    text-align: center;
+	margin:0;
+	position: relative;
+	top : 7px; 
+	font-weight: bold;
+	font-size: 18px;
+	color:coral;
+}
+/* BLOC GENERAL BIEN ETRE */ 
+#blocgeneral_Bien_Etre{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 50%
+	margin-left:35%;
+	margin-top: 7%;
+}
+
+.relaxation{
+
+	height: 390px;
+	width:50%; 
+
+
+}
+
+.gestion_stress{
+
+	height: 390px;
+	width:50px; 
+
+
+}
+.textB-E1 img{
+
+	background-color:green;
+	padding-right: 10%;
+	color:blanchedalmond; 
+	margin-left: 200px;
+
+}
+
+.middleBE-1{
+
+	
+	font-size: 23px;
+}
+
+.sport{
+
+	height: 390px;
+	width:50px; 
+}
+
+
+#footer {
+	text-align: center;
+	display: block;
+	background-color:#74B72E;
+	height: 60px;
+	width :100%;
+}
+#footer p {
+	color: black;
+	font-weight: bold;
+	position: relative;
+	top : 18px;
+}
+ 
 
 /* partie footer 
 
 #footer {
 	text-align: center;
 	display: block;
-	background-color: #228B22;
+	background-color: #74B72E;
 	height: 60px;
 	width : 90%;
 

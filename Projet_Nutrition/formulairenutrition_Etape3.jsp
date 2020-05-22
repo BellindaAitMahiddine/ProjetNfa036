@@ -16,7 +16,7 @@
       <li><a href="page_acceuil.html"> ACCEUIL </a> </li>
       <li><a href="bien_manger.html"> BIEN MANGER </a> </li>
       <li><a href="cuisine_recettes.html"> CUISINE ET RECETTES </a> </li>
-      <li><a href="index.html"> BIEN-ÊTRE </a> </li>
+      <li><a href="index.html"> BIEN-&EcircTRE </a> </li>
     </ul>
 
   </div>
@@ -88,18 +88,18 @@
          <tr><th>Manger vous des prouits sucr&eacutes :  barre chocolat&eacutes, bonbons, confiture, sodas, jus, morceaux de sucre dans le caf&eacute ou le th&eacute :
        <br></th>
          <td><br><br><br><br><br><p><input type="number" id="sucre" name="sucre"required="required" /><label for="sucre"> g</label> </p>
-          <p> A titre indicatif :<br>un mars(45g) contient 30g, une petite poign&eacutee de bonbon = 40g , 1 morceaux de sucre : 5g, soda: une canette (33cl)= 35g :</p></td></tr>
+          <p> A titre indicatif : <br>un mars(45g) = 30g de sucre, <br>une petite poign&eacutee de bonbon = 40g,<br>1 morceaux de sucre: 5g,<br> soda: une canette (33cl)= 35g</p></td></tr>
 
          <tr><th colspan="2"><h1> Alcool</h1></th></tr>
          <tr><th>A quelle fr&eacutequence consommez-vous de l'alcool ? </th>
               <label for="alcool"></label>
                 <td><p><select name="alcool" id="alcool"required="required"> 
 
-                  <option value= "0"> Jamais ou rarement</option>
-                  <option value= "1"> 2 fois par semaine</option>
-                  <option value= "2"> 4 fois par semaine</option>
-                  <option value= "3"> Tous les jours</option>
-                  <option value=" 4"> Plusieurs fois par jour</option>
+                  <option value= "0">Jamais ou rarement</option>
+                  <option value= "1">2 fois par semaine</option>
+                  <option value= "2">4 fois par semaine</option>
+                  <option value= "3">Tous les jours</option>
+                  <option value=" 4">Plusieurs fois par jour</option>
                   
                 </select></p></td></tr>
 
@@ -116,8 +116,8 @@
           <input type="radio" name="cuisine" value="1" id="1"required="required" /> <label for="1">Non</label><br></p></td></tr>
 
           <tr><th>Mangez - vous au Fast food (pizza, kebab, macdo....) : </th>          
-          <td><p><br><input type="radio" name="fastfood" value="3" id="3" required="required" /> <label for="3">Plusieurs par semaines</label><br>
-          <input type="radio" name="fastfood" value="1" id="1"required="required" /> <label for="1">1 fois toutes les deux semaines</label><br>
+          <td><p><br><input type="radio" name="fastfood" value="3" id="3" required="required" /> <label for="3">Plusieurs fois par sem</label><br>
+          <input type="radio" name="fastfood" value="1" id="1"required="required" /> <label for="1">1 fois toutes les 2 sem</label><br>
           <input type="radio" name="fastfood" value="0" id="0" required="required"/> <label for="0">Jamais ou Rarement</label><br><br></p></td></tr>
 
 
@@ -125,8 +125,12 @@
            <td><p><input type="radio" name="epices" value="0" id="0" required="required"/> <label for="0"> Oui </label>
           <input type="radio" name="epices" value="1" id="1" required="required"/> <label for="1"> Non </label></p></td></tr>
              <tr><th><br><br><br></th></tr>
-          <tr><td> <input type="button" value="Retour &agrave l'etape 2" onclick="history.go(-1)"></th><td> <input type="submit" id=valider" name="valider" value="Valider le questionnaire" /></td></tr>
+          <tr><th> <input type="button" value="Retour &agrave l'etape 2" onclick="history.go(-1)"></th><td> <input type="submit" id=valider" name="valider" value="Valider le questionnaire" /></td></tr>
+           <tr><th><br><br><br></th></tr>
         </form>
         </table>
+        </div>
+        <div id = "footer">
+  </div>
   </body>
 </html>

@@ -11,7 +11,7 @@
   <div id = "banner1">
     <img src="images/image-head.jpg">
   </div>
-  <div id = "menu">
+  <div id = "menuform">
     <ul>
       <li><a href="page_acceuil.html"> ACCEUIL </a> </li>
       <li><a href="bien_manger.html"> BIEN MANGER </a> </li>
@@ -83,12 +83,13 @@
           out.println("<input type ='hidden'name = 'friture' id ='friture' value='"+friture+"'>");
 
       %>
+       <tr><th colspan="2"><center><progress id="bar"value="100" max="100"> </progress><center></th></tr>
 
          <tr><th colspan="2"><h1>Produits sucr&eacutes et sucre : </h1></th></tr>
-         <tr><th>Manger vous des prouits sucr&eacutes :  barre chocolat&eacutes, bonbons, confiture, sodas, jus, morceaux de sucre dans le caf&eacute ou le th&eacute :
+         <tr><th>Manger vous des prouits sucr&eacutes :  barre chocolat&eacutes, bonbons, confiture, sodas, jus, <br>morceaux de sucre dans le caf&eacute ou le th&eacute :
        <br></th>
          <td><br><br><br><br><br><p><input type="number" id="sucre" name="sucre"required="required" /><label for="sucre"> g</label> </p>
-          <p> A titre indicatif : <br>un mars(45g) = 30g de sucre, <br>une petite poign&eacutee de bonbon = 40g,<br>1 morceaux de sucre: 5g,<br> soda: une canette (33cl)= 35g</p></td></tr>
+          <p> <div class="indication">A titre indicatif : <br>un mars(45g) = 30g de sucre, <br>une petite poign&eacutee de bonbon = 40g,<br>1 morceaux de sucre: 5g,<br> soda: une canette (33cl)= 35g</p></div></td></tr>
 
          <tr><th colspan="2"><h1> Alcool</h1></th></tr>
          <tr><th>A quelle fr&eacutequence consommez-vous de l'alcool ? </th>
@@ -105,12 +106,12 @@
 
           <tr><th colspan="2"><h1>Boisson </h1></th></tr>
           <tr><th> Quelle quantit&eacute de boisson (caf&eacute, th&eacute, eau...) prenez-vous par jour? </th>
-          <td><p><input type="number" id="eau" name="eau" required="required"/><label for="sucre"> ml</label></p> <p>A titre indicatif: <br>(Un mug a caf&eacute = 200ml)</p></td></tr>
+          <td><p><input type="number" id="eau" name="eau" required="required"/><label for="sucre"> ml</label></p> <p><div class="indication">A titre indicatif: <br>(Un mug a caf&eacute = 200ml)</div></p></td></tr>
 
           <br>
 
           <tr><th colspan="2"><h1>Cuisine</h1></th></tr>
-          <tr><th> Vous consommez fr&eacutequemment des plats tout fait, industriels plut&ocirct que cuisinez vous m&ecircme soit par manque de temps ou d'envie </th>
+          <tr><th> Vous consommez fr&eacutequemment des plats tout fait, industriels :</th>
        
          <td><p><input type="radio" name="cuisine" value="2" id="2"required="required" /> <label for="2">Oui  </label>
           <input type="radio" name="cuisine" value="1" id="1"required="required" /> <label for="1">Non</label><br></p></td></tr>

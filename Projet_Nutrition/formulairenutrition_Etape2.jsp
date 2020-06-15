@@ -11,15 +11,15 @@
   <div id = "banner1">
     <img src="images/image-head.jpg">
   </div>
-  <div id = "menu">
-    <ul>
+  <center>
+  <div id = "menuform">
+   <center> <ul>
       <li><a href="page_acceuil.html"> ACCEUIL </a> </li>
       <li><a href="bien_manger.html"> BIEN MANGER </a> </li>
       <li><a href="cuisine_recettes.html"> CUISINE ET RECETTES </a> </li>
       <li><a href="index.html"> BIEN-&EcircTRE </a> </li>
-    </ul>
-
-  </div>
+    </ul></center>
+  </div></center>
 
   
 <%
@@ -38,7 +38,6 @@
   %>
   <div id = "formulaire">
   
-  <h1> Etape 2 du questionnaire:</h1>
   <table height = "2000" border="0">
   <form method="post" action="formulairenutrition_Etape3.jsp">
 <%
@@ -54,13 +53,13 @@
       out.println("<input type ='hidden'name = 'largeurpoitrine' id ='largeurpoitrine' value='"+largeurpoitrine+"'>");
       out.println("<input type ='hidden'name = 'profil' id ='profil' value='"+profil+"'>");
 %>
+        <tr><th colspan="2"><center> <h1> Etape 2 du questionnaire:</h1><progress id="bar"value="65" max="100"> </progress><center></th></tr>
        <tr><th colspan="2"><h1>L&eacutegumes :</h1></th></tr>
-       <tr><th>Quelle quantit&eacute journali&egravere consommez-vous ? <br>
-       A Titre indicatif : 1 cuillere &agrave soupe = 30g, 1 courgette = 200g, 1 carotte = 100g :</th>
-        <td><p><input type="number" id="legumes" name="legumes" required="required"/> <label for ="legumes"> g</label></p></td></tr>
+       <tr><th>Quelle quantit&eacute journali&egravere consommez-vous (crus et cuits) ? <br> </th>
+        <td><p><input type="number" id="legumes" name="legumes" required="required"/> <label for ="legumes"> g</label></p> <div class="indication"> A Titre indicatif : 1 cuillere &agrave soupe = 30g, 1 courgette = 200g, 1 carotte = 100g :</div></td></tr>
        <tr><th colspan="2"><h1> Fruits : </h1></th></tr>
-        <tr><th>Quelle quantit&eacute journali&egravere consommez-vous ? <br>A titre indicatif : 1 pomme = 150g, fruits cuits ou crus, en compote ou entiers!</th>
-       <td><p><input type="number" id="fruis" name="fruits"required="required" /> <label for="fruits"> g</label>  </p></td></tr>
+        <tr><th>Quelle quantit&eacute journali&egravere consommez-vous (crus et cuits)? <br></th>
+       <td><p><input type="number" id="fruis" name="fruits"required="required" /> <label for="fruits"> g</label>  </p><div class="indication">A titre indicatif : 1 pomme = 150g, fruits cuits ou crus, en compote ou entiers!</div></td></tr>
   
        <tr><th > Mettez vous un point d'honneur &agrave consommer des fruits ou l&eacutegumes de saison ?</th>
        <td><p><input type="radio" name="saison" value="1" id="1"required="required"/> <label for="1">oui  </label>
@@ -77,22 +76,21 @@
           </select></p></td></tr>
         
            <tr><th colspan="2"><h1>Viandes - Oeufs - Poisson :</h1></th></tr>
-          <tr><th>A titre indicatif : 1 oeuf = 50g, un steack hach&eacute/pav&eacute de saumon : 120g</th>
+          <tr><th><p>Quelle quantit&eacute consommez-vous?</th>
           
-          <td><p><input type="number" id="viandes" name="viandes" required="required"/> <label for="viandes"> g </label></p></td></tr>
+          <td><p><input type="number" id="viandes" name="viandes" required="required"/> <label for="viandes"> g </label><div class="indication">A titre indicatif : 1 oeuf = 50g, un steack hach&eacute ou un pav&eacute de saumon : 120g</div></p></td></tr>
 
            <tr><th colspan="2"><h1> F&eacuteculents : </h1></th></tr>
-          <tr><th>Riz - Pates - L&eacutegumes secs - Pomme de terre : <br>
-          A titre indicatif : 1 pomme de terre moyenne = 100g, 1 cuill&eacutere à soupe = 30g  </th>         
-          <td><p><input type="number" id="feculents" name="feculents"required="required" />   <label for="feculent"> g </label> </p></td></tr>
+          <tr><th>Riz - Pates - L&eacutegumes secs - Pomme de terre : <br> </th>         
+          <td><p><input type="number" id="feculents" name="feculents"required="required" />   <label for="feculent"> g </label>   <div class="indication">  A titre indicatif : 1 pomme de terre moyenne = 100g, 1 cuill&eacutere à soupe = 30g </div></p></td></tr>
          
            <tr><th> Consommer des l&eacutegumes secs (poids chiche, lentilles, haricot...) ? </th>
           <td><p><input type="radio" name="legusecs" value="1" id="1"required="required" /> <label for="oui">Oui  </label>
           <input type="radio" name="legusecs" value="2" id="2" required="required"/> <label for="non">Non</label></p></td></tr>
                  
            <tr><th colspan="2"><h1>Pain:</h1> </th></tr>
-          <tr><th>A titre indicatif : 1 baguette = 250g, 1 tartine = 30g</th>
-          <td><p><label for="pain">Quantit&eacute de pain  :  </label> <br><br> <input type="number" id="pain" name="pain" /> g</p></td></tr>
+          <tr><th><p> Quelle quantit&eacute consommez-vous?</th>
+          <td><p><br><br> <input type="number" id="pain" name="pain" /><label for="pain">g </label> </p><div class="indication">A titre indicatif : 1 baguette = 250g, 1 tartine = 30g</div></td></tr>
 
          
           <tr><th colspan="2"><h1>Produits laitier</h1></th></tr>
